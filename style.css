@@ -1,0 +1,72 @@
+*{
+    background-color: thistle;
+}
+body{
+    font: 1em sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.container{
+    max-width: 18px;
+    margin: auto;
+}
+.task-form input, .task-form select{
+    margin: 5px;
+    padding: 10px;
+    border-radius:5px ;
+    border: 1px solid black;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5pc 0;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.expired{
+    color: black;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#clock{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.task-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#task-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+@media(max-width : 400px){
+    .taskItem{
+        width: 100%;
+    }
+}
+
+button{
+    background-color: rgb(92, 92, 210);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}

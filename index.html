@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Managment</title>
+    <link href="style.css" rel="stylesheet"> 
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <dic class="container">
+        <h1>Task Management</h1>
+        <div id="clock"></div>
+
+        <div class="task-form">
+            <input type="text" id="textTitle" placeholder="Enter task title" required>
+
+            <input type="text" id="taskDescription" placeholder="Enter description">
+
+            <select id="taskPriorty">
+                <option value="low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button onclick="addTask()">Add Task</button>
+
+            <!-- Fliter -->
+             <div class="filter-sort">
+                <select id="filter">
+                    <option value="All">All</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button onclick="sortTasks('priority')">Sort by Priority</button>
+                <button onclick="sortTasks('title')">Sort by Title</button>
+             </div>
+
+                <ul id="taskList" class="task-list"></ul>
+
+        </div>
+    </div>
+    
+</body>
+
+</html>

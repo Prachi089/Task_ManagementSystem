@@ -9,7 +9,8 @@ Users can sort tasks alphabetically.
 
 Use HTML, CSS (Flex/Grid), and JavaScrip.
 Responsive Layout.
-
 Image belowe:
+
+
 ![image](https://github.com/user-attachments/assets/8c186801-f71d-488f-bac4-1ba6f811316c)
 
